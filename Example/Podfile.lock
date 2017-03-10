@@ -1,0 +1,16 @@
+PODS:
+  - iOSTools (0.1.0)
+
+DEPENDENCIES:
+  - iOSTools (from `../`)
+
+EXTERNAL SOURCES:
+  iOSTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iOSTools: 69acf714a14e28cbb608216ebd08d4dadc3d0b49
+
+PODFILE CHECKSUM: 2f3286325de1c45d2beb2ae5cb53f5583ba4977c
+
+COCOAPODS: 1.2.0

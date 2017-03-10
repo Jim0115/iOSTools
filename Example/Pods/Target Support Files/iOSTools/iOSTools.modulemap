@@ -1,0 +1,6 @@
+framework module iOSTools {
+  umbrella header "iOSTools-umbrella.h"
+
+  export *
+  module * { export * }
+}
