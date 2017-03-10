@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'iOSTools_Example' do
+  pod 'iOSTools', :path => '../'
+
+  target 'iOSTools_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
