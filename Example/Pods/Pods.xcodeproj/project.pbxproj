@@ -14,6 +14,7 @@
 		970766CD2C8F1FA50800DDFAA7FA838C /* iOSTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E9908D37B3AB3E230807609C766A8A3 /* iOSTools-dummy.m */; };
 		9A22628453C1E69058AE31374589CCB3 /* iOSTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0032DD558159504DE4BDB7E2D0856AF /* iOSTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A464168134DE1ADCFA5A333F52153A97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		CCACE6091E78D9A200BA8D31 /* Date+Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCACE6081E78D9A200BA8D31 /* Date+Interval.swift */; };
 		CCE3B0491E72409C00BCAEBE /* NSLayout+ActiveContaints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE3B0481E72409C00BCAEBE /* NSLayout+ActiveContaints.swift */; };
 		D92429986138D5D10B57E13C414E8402 /* Pods-iOSTools_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF02C67EE97DCF4451ED92EE3503EE44 /* Pods-iOSTools_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E995FA7D4E2A3B3B5AD9425975678CB6 /* Pods-iOSTools_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51DC93A233E32F809D08907B0893CC8F /* Pods-iOSTools_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,6 +53,7 @@
 		AB44EE8D9D28CFC44AB49F7158A1DE91 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5FA06E8EDC7F242465FCBE62E7E72A7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CCACE6081E78D9A200BA8D31 /* Date+Interval.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Interval.swift"; sourceTree = "<group>"; };
 		CCE3B0481E72409C00BCAEBE /* NSLayout+ActiveContaints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayout+ActiveContaints.swift"; sourceTree = "<group>"; };
 		D0032DD558159504DE4BDB7E2D0856AF /* iOSTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSTools-umbrella.h"; sourceTree = "<group>"; };
 		D0246A8C72CFBDD696CF0860C239EE94 /* Pods-iOSTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSTools_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				CCE3B0481E72409C00BCAEBE /* NSLayout+ActiveContaints.swift */,
+				CCACE6081E78D9A200BA8D31 /* Date+Interval.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCE3B0491E72409C00BCAEBE /* NSLayout+ActiveContaints.swift in Sources */,
+				CCACE6091E78D9A200BA8D31 /* Date+Interval.swift in Sources */,
 				970766CD2C8F1FA50800DDFAA7FA838C /* iOSTools-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +400,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				MODULEMAP_FILE = "Target Support Files/iOSTools/iOSTools.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = iOSTools;
@@ -584,6 +589,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				MODULEMAP_FILE = "Target Support Files/iOSTools/iOSTools.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = iOSTools;
