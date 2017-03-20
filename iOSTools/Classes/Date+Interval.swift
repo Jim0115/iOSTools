@@ -14,6 +14,8 @@ public extension Date {
         case minute(Double)
         case hour(Double)
         case day(Double)
+        case month(Int)
+        case year(Int)
     }
     
     func addingTimeInterval(_ interval: IntervalEmum) -> Date {
@@ -27,6 +29,10 @@ public extension Date {
             i = v * 3600
         case let .day(v):
             i = v * 3600 * 24
+        case let .month(v):
+            return Calendar.current.date(byAdding: .month, value: v, to: self)!
+        case let .year(v):
+            return Calendar.current.date(byAdding: .year, value: v, to: self)!
         }
         
         return self.addingTimeInterval(i)
